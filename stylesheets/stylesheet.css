@@ -245,3 +245,24 @@ a {
 .cf {
   zoom:1;
 }
+
+/* --------- */
+
+.social-buttons {
+  vertical-align: middle;
+}
+
+.logo {
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+}
+
+.button {
+  width: 15px;
+  height: 15px;
+}
+
+.year {
+  color: #eaeaea;
+}

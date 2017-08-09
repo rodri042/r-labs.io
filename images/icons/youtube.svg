@@ -1,0 +1,27 @@
+<svg width="461.001" height="461.001" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_2"/>
+  <g id="svg_3"/>
+  <g id="svg_4"/>
+  <g id="svg_5"/>
+  <g id="svg_6"/>
+  <g id="svg_7"/>
+  <g id="svg_8"/>
+  <g id="svg_9"/>
+  <g id="svg_10"/>
+  <g id="svg_11"/>
+  <g id="svg_12"/>
+  <g id="svg_13"/>
+  <g id="svg_14"/>
+  <g id="svg_15"/>
+  <g id="svg_16"/>
+  <rect id="svg_17" height="204" width="213" y="122.500504" x="123.000488" stroke-opacity="null" stroke-width="null" stroke="null" fill="#ffffff"/>
+  <path id="svg_1" fill="#F61C0D" d="m365.257,67.393l-269.513,0c-52.878,0 -95.744,42.866 -95.744,95.744l0,134.728c0,52.878 42.866,95.744 95.744,95.744l269.513,0c52.878,0 95.744,-42.866 95.744,-95.744l0,-134.728c0,-52.878 -42.866,-95.744 -95.744,-95.744zm-64.751,169.663l-126.06,60.123c-3.359,1.602 -7.239,-0.847 -7.239,-4.568l0,-124.004c0,-3.774 3.982,-6.22 7.348,-4.514l126.06,63.881c3.748,1.899 3.683,7.274 -0.109,9.082z"/>
+ </g>
+</svg>
