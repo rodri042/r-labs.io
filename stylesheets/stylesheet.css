@@ -271,3 +271,7 @@ a {
 .centered {
   text-align: center;
 }
+
+.warning {
+  color: #ffa500;
+}
