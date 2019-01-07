@@ -265,6 +265,14 @@ a {
   height: 1em;
 }
 
+.project {
+  border: groove 2px #5f5f5f;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px #2f2f2f;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
 .year {
   color: #eaeaea;
 }
