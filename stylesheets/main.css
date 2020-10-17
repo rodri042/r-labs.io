@@ -7,6 +7,7 @@ body {
   line-height: 1.5;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal,
     monospace;
+  min-width: 220px;
 }
 
 /* General & 'Reset' Stuff */
@@ -287,10 +288,8 @@ a {
 
 .head {
   display: flex;
+  flex-direction: row;
   margin-bottom: 20px;
-}
-
-.introduction {
 }
 
 .avatar {
@@ -348,6 +347,7 @@ a {
 
 .grid {
   display: flex;
+  flex-direction: row;
 }
 
 .year {
@@ -360,4 +360,20 @@ a {
 
 .warning {
   color: #ffa500;
+}
+
+@media (max-width: 600px) {
+  .head {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .grid {
+    flex-direction: column;
+  }
+  
+  .project {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
