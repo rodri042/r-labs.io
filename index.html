@@ -112,6 +112,33 @@
 
 				<div class="grid">
 					<div class="project">
+						<a id="gba-remote-play" class="anchor" href="#gba-remote-play" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+						<h3>
+							<a href="https://github.com/rodri042/gba-remote-play" target="_blank">gba-remote-play</a>
+							<img alt="GBA" class="button" src="images/icons/gba.png" />
+							<span class="year">(2021)</span>
+						</h3>
+
+						<p class="video-preview">
+							<iframe width="600" height="330"
+								src="https://youtube.com/embed/PoRmuKUQRY0"
+								frameborder="0" allowFullScreen
+							></iframe>
+						</p>
+
+						<p>A software that streams games from a Raspberry Pi to a Game Boy Advance, through its Link Port. Video and audio are compressed and sent in real time to the GBA, while the latter responds with its current input, allowing to play games of any platform by using the GBA (hence, Remote Play).</p>
+						<ul>
+							<li>Plays any game using <a href="https://retropie.org.uk/" target="_blank">RetroPie</a> on the GBA!</li>
+							<li><i>120x80</i> pixels of power!</li>
+							<li>~60fps using the default display mode</li>
+							<li>Retro scanlines 😎</li>
+							<li>More <i>pixels of power</i> on overclocked GBAs</li>
+							<li>Experimental audio support!</li>
+							<li><del>Crashes on the GB Micro! (yep, that's a feature)</del></li>
+						</ul>
+					</div>
+
+					<div class="project">
 						<a id="piugba" class="anchor" href="#piugba" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
 						<h3>
 							<a href="https://github.com/rodri042/piugba" target="_blank">piuGBA</a>
@@ -137,6 +164,24 @@
 						</ul>
 
 						<p>Go to the <a href="https://discord.com/invite/JE33cc2" target="_blank">Discord server</a> to find Download links and user-created content.</p>
+					</div>
+				</div>
+
+				<div class="grid">
+					<div class="project">
+						<a id="gba-link-connection" class="anchor" href="#gba-link-connection" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+						<h3>
+							<a href="https://github.com/rodri042/gba-link-connection" target="_blank">gba-link-connection</a>
+							<img alt="GBA" class="button" src="images/icons/gba.png" />
+							<span class="year">(2020)</span>
+						</h3>
+
+						<p class="image-preview">
+							<a href="https://github.com/rodri042/gba-link-connection" target="_blank"><img alt="Screenshot" src="images/screenshots/gba-link-connection.png" style="max-height: 340px"></a>
+						</p>
+
+						<p>A GameBoy Advance Link Cable library to add multiplayer support to homebrew games.</p>
+						<p>The library uses message queues to send/receive data and transmits when it's possible. As it uses CPU interrupts, the connection is alive even if a console drops a frame or gets stucked in a long iteration loop. After such event, all nodes end up receiving all the pending messages, so a lockstep communication protocol can be used.</p>
 					</div>
 
 					<div class="project">
@@ -176,7 +221,7 @@
 							<a href="https://github.com/rodri042/el-dumper" target="_blank"><img alt="Screenshot" src="images/screenshots/eldumper.png" style="max-height: 340px"></a>
 						</p>
 
-						<p>A Nintendo GameBoy cartridge dumper that can read the ROM and read/write battery-backed RAM to manage games and save files.</p>
+						<p>A Game Boy cartridge dumper that can read the ROM and read/write battery-backed RAM to manage games and save files.</p>
 					</div>
 
 					<div class="project">
