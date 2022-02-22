@@ -292,7 +292,7 @@ a {
 
 .head {
   display: flex;
-  flex-direction: row;
+  flex-direction: row !important;
   margin-bottom: 20px;
 }
 
@@ -332,6 +332,8 @@ a {
   box-shadow: 3px 3px 3px #2f2f2f;
   padding: 15px;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .video-preview {
@@ -340,6 +342,7 @@ a {
   height: 0;
   display: flex;
   justify-content: center;
+  flex: 1;
 }
 
 .video-preview iframe {
@@ -361,6 +364,7 @@ a {
 
 .image-preview {
   text-align: center;
+  flex: 1;
 }
 
 .warning {
