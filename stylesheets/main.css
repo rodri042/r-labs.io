@@ -340,6 +340,10 @@ a {
   margin-bottom: 20px;
 }
 
+.sourcecode {
+  text-align: right;
+}
+
 .video-preview {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
