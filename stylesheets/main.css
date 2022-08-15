@@ -310,8 +310,7 @@ a {
   justify-content: center;
   text-align: center;
   flex: 1;
-  margin-left: 32px;
-  margin-right: 32px;
+  margin-left: 16px;
   border-radius: 8px;
   border: groove 2px #5f5f5f;
 }
