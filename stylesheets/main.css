@@ -349,6 +349,14 @@ a {
   margin-right: auto;
 }
 
+.medium-grid {
+  width: 75%;
+  align-self: center;
+  justify-self: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .centered-project {
   margin: 20px 15% !important;
 }
@@ -443,6 +451,10 @@ a {
   }
 
   .single-grid {
+    width: 100%;
+  }
+
+  .medium-grid {
     width: 100%;
   }
 
