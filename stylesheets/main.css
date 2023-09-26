@@ -250,7 +250,7 @@ hr {
 
 .btn-github .icon {
   opacity: 0.6;
-  background: url("../images/blacktocat.png") 0 0 no-repeat;
+  background: url("../images/icons/blacktocat.png") 0 0 no-repeat;
 }
 
 /* Links
@@ -337,10 +337,6 @@ a {
   margin-right: 8px;
 }
 
-.up-button {
-  text-decoration: none;
-}
-
 .single-grid {
   width: 50%;
   align-self: center;
@@ -417,6 +413,17 @@ a {
 
 .warning {
   color: #ffa500;
+}
+
+.up-button {
+  text-decoration: none;
+  font-size: small;
+}
+
+.nav-button {
+  float: right;
+  text-decoration: none;
+  font-size: small;
 }
 
 @media (max-width: 825px) {
