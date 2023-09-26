@@ -371,8 +371,16 @@ a {
   margin-bottom: 20px;
 }
 
+.open-source {
+  padding-bottom: 48px;
+  position: relative;
+}
+
 .sourcecode {
   text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 16px;
 }
 
 .video-preview {
