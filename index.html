@@ -38,9 +38,9 @@
 					<div class="introduction introduction-text">
 						<p>I'm Rodrigo Alfonso (@<strong>afska</strong>)*, a software developer and musician from Argentina.</p>
 						<p>I'm interested in 💻 computers, 🤘 metal, and 👾 retro gaming.<br />
-						This page contains some personal projects that I developed in my free time.</p>
+						This page showcases some personal projects that I've developed in my free time.</p>
 						<p>
-							<span>You can find me in</span>
+							<span>You can find me on</span>
 							<span class="social-buttons">
 								<a href="https://github.com/afska" target="_blank"><img alt="GitHub" class="button" src="images/icons/github.svg" /></a>
 								<a href="https://www.reddit.com/user/rodri042" target="_blank"><img alt="Reddit" class="button" src="images/icons/reddit.svg" /></a>
@@ -89,7 +89,7 @@
 							></iframe>
 						</p>
 
-						<p><a href="https://mousewars.io" target="_blank">MouseWars.io</a> is a real time multiplayer cursor war game. The cursors have to fight until only one remains.</p>
+						<p><a href="https://mousewars.io" target="_blank">MouseWars.io</a> is a real-time multiplayer cursor war game. The cursors must fight until only one remains.</p>
 						<ul>
 							<li>🌐 <strong>Web-based</strong> and available online for <strong>free</strong></li>
 							<li>🤼‍♂️ Two game modes: <strong>All vs all</strong> and <strong>Team vs team</strong></li>
@@ -215,8 +215,15 @@
 							<a href="https://github.com/afska/gba-link-connection" target="_blank"><img alt="Screenshot" src="images/screenshots/gba-link-connection.png" style="max-height: 340px"></a>
 						</p>
 
-						<p>A Game Boy Advance <a href="https://en.wikipedia.org/wiki/Game_Link_Cable" target="_blank">Link Cable</a> library to add multiplayer support to homebrew games.</p>
-						<p>The library uses message queues to send/receive data and transmits when it's possible. As it uses CPU interrupts, the connection is alive even if a console drops a frame or gets stucked in a long iteration loop. After such event, all nodes end up receiving all the pending messages, so a lockstep communication protocol can be used.</p>
+						<p>A set of Game Boy Advance (GBA) C++ libraries to interact with the <a href="https://en.wikipedia.org/wiki/Game_Link_Cable" target="_blank">Serial Port</a>. Its main purpose is providing multiplayer support to homebrew games.
+						<ul>
+							<li>👾 <a href="https://github.com/afska/gba-link-connection/blob/master/lib/LinkCable.h" target="_blank">LinkCable.h</a>: The classic 16-bit <strong>Multi-Play mode</strong> (up to 4 players) using a GBA Link Cable!</li>
+							<li>💻 <a href="https://github.com/afska/gba-link-connection/blob/master/lib/LinkCableMultiboot.h" target="_blank">LinkCableMultiboot.h</a>: Send <strong>Multiboot software</strong> (small 256KiB ROMs) to other GBAs with no cartridge!</li>
+							<li>🔌 <a href="https://github.com/afska/gba-link-connection/blob/master/lib/LinkGPIO.h" target="_blank">LinkGPIO.h</a>: Use the Link Port however you want to control <strong>any device</strong> (like LEDs or rumble motors)!</li>
+							<li>🔗 <a href="https://github.com/afska/gba-link-connection/blob/master/lib/LinkSPI.h" target="_blank">LinkSPI.h</a>: Connect with a PC or another GBA using this mode. Transfer up to 2Mbit/s!</li>
+							<li>📻 <a href="https://github.com/afska/gba-link-connection/blob/master/lib/LinkWireless.h" target="_blank">LinkWireless.h</a>: Connect up to 5 consoles with the <strong>Wireless Adapter</strong>!</li>
+							<li>🌎 <a href="https://github.com/afska/gba-link-connection/blob/master/lib/LinkUniversal.h" target="_blank">LinkUniversal.h</a>: Add multiplayer support to your game, both with 👾 <em>Link Cables</em> and 📻 <em>Wireless Adapters</em>, using the <strong>same API</strong>.</li>
+						</ul>							
 						<p class="sourcecode"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/gba-link-connection" target="_blank">Source code</a></p>
 					</div>
 
