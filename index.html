@@ -173,13 +173,13 @@
 						<h3>
 							<a href="https://github.com/afska/piugba" target="_blank">piuGBA</a>
 							<img alt="GBA" class="button" src="images/icons/gba.png" />
-							<span class="year">(2020)</span>
+							<span class="year">(2020~2024)</span>
 							<a href="#piugba" class="nav-button">🔗</a>
 						</h3>
 
 						<p class="image-preview">
-							<a href="https://github.com/afska/piugba" target="_blank"><img alt="Screenshot" src="https://i.imgur.com/z5rg1ck.gif"></a>
 							<a href="https://github.com/afska/piugba" target="_blank"><img alt="Screenshot" src="https://i.imgur.com/KFRisl1.gif"></a>
+							<a href="https://github.com/afska/piugba" target="_blank"><img alt="Screenshot" src="https://i.imgur.com/fGGFvAj.gif"></a>
 							<a href="https://github.com/afska/piugba" target="_blank"><img alt="Screenshot" src="https://i.imgur.com/9a9kB6E.gif"></a>
 							<a href="https://github.com/afska/piugba" target="_blank"><img alt="Screenshot" src="https://i.imgur.com/o8DS4Xb.gif"></a>
 						</p>
@@ -188,7 +188,8 @@
 						<ul>
 							<li>📁 Full .ssc support (including hold and fake notes, bpm/scroll changes, stop/delays, and warps)</li>
 							<li>🕹️ Several game modes (campaign, arcade, impossible)</li>
-							<li>🔗 Multiplayer support via Link Port (double charts)</li>
+							<li>🔗 Multiplayer via Link Cable / Wireless Adapter</li>
+							<li>🎥 Background videos from the SD card via EverDrive</li>
 							<li>⚡ Dynamic speed multipliers</li>
 							<li>🛠️ Multiple mods</li>
 							<li>🎵 ~70 songs per .gba ROM</li>
@@ -207,7 +208,7 @@
 							<a href="https://github.com/afska/gba-link-connection" target="_blank">gba-link-connection</a>
 							<img alt="GitHub" class="button" src="images/icons/github.svg" />
 							<img alt="GBA" class="button" src="images/icons/gba.png" />
-							<span class="year">(2020)</span>
+							<span class="year">(2020~2024)</span>
 							<a href="#gba-link-connection" class="nav-button">🔗</a>
 						</h3>
 
@@ -229,21 +230,32 @@
 					</div>
 
 					<div class="project open-source">
-						<a id="el-dumper" class="anchor" href="#el-dumper" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+						<a id="gba-flashcartio" class="anchor" href="#gba-flashcartio" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
 						<h3>
-							<a href="https://github.com/afska/el-dumper" target="_blank">ElDumper</a>
-							<img alt="Arduino" class="button" src="images/icons/arduino.svg" />
-							<span class="year">(2019)</span>
-							<a href="#el-dumper" class="nav-button">🔗</a>
+							<a href="https://github.com/afska/gba-flashcartio" target="_blank">gba-flashcartio</a>
+							<img alt="GitHub" class="button" src="images/icons/github.svg" />
+							<img alt="GBA" class="button" src="images/icons/gba.png" />
+							<span class="year">(2024)</span>
+							<a href="#gba-flashcartio" class="nav-button">🔗</a>
 						</h3>
 
 						<p class="image-preview">
-							<a href="https://github.com/afska/el-dumper" target="_blank"><img alt="Screenshot" src="images/screenshots/eldumper.png" style="max-height: 340px"></a>
+							<a href="https://github.com/afska/gba-flashcartio" target="_blank"><img alt="Screenshot" src="images/screenshots/gba-flashcartio.png" style="max-height: 340px"></a>
 						</p>
 
-						<p>A Game Boy cartridge dumper that can read the ROM and read/write battery-backed RAM to manage games and save files.</p>
-						<p>It's based on insideGadget's <a href="https://github.com/insidegadgets/GBCartRead" target="_blank">GBCartRead</a>, but it adds a new graphical interface packed as an Electron app, so users don't have to download and execute Python scripts in order to dump the memory.</p>
-						<p class="sourcecode"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/el-dumper" target="_blank">Source code</a></p>
+						<p>A Game Boy Advance (GBA) C library to access the SD card of the following flashcarts:
+						<ul>
+							<li>EverDrive GBA X5 / Mini</li>
+							<li>EZ Flash Omega / OmegaDE</li>
+						</ul>							
+						<p>The flashcart type is autodetected and FAT partitions are supported via <a href="http://elm-chan.org/fsw/ff" target="_blank">ELM-ChaN's FatFs library</a>.
+						<ul>
+							<li>Only read operations are implemented in FatFs.</li>
+							<li>It reads using either DMA3 or DMA1.</li>
+							<li>In EverDrive mode, the latter 16MB of the ROM is unavailable while reading, so avoid using that part in your interrupt handlers, or your code might crash.</li>
+							<li>In EZ Flash mode, ROM is unavailable while using the SD card, so ~1KB of static EWRAM will be taken by some functions. Also, When reading, interrupts will be briefly disabled (<code>REG_IME = 0</code>) to avoid problems.</li>
+						</ul>
+						<p class="sourcecode"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/gba-link-connection" target="_blank">Source code</a></p>
 					</div>
 				</div>
 
@@ -324,24 +336,28 @@
 						</p>
 	
 						<p>An <a href="https://en.wikipedia.org/wiki/MPlayer" target="_blank">mplayer</a> wrapper that lets you find and play songs from your terminal with shifted <i>pitch</i> or <i>speed</i>.</p>
+
+						<p>I use this to quickly change a song's key when playing an instrument.</p>
+
 						<p class="sourcecode"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/play-and-shift" target="_blank">Source code</a></p>
 					</div>
 
 					<div class="project open-source">
-						<a id="csgo-death-trigger" class="anchor" href="#csgo-death-trigger" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+						<a id="el-dumper" class="anchor" href="#el-dumper" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
 						<h3>
-							<a href="https://github.com/afska/csgo-death-trigger" target="_blank">csgo-death-trigger</a>
-							<img alt="Web" class="button" src="images/icons/windows.svg" />
-							<span class="year">(2022)</span>
-							<a href="#csgo-death-trigger" class="nav-button">🔗</a>
+							<a href="https://github.com/afska/el-dumper" target="_blank">ElDumper</a>
+							<img alt="Arduino" class="button" src="images/icons/arduino.svg" />
+							<span class="year">(2019)</span>
+							<a href="#el-dumper" class="nav-button">🔗</a>
 						</h3>
-	
+
 						<p class="image-preview">
-							<a href="https://github.com/afska/csgo-death-trigger" target="_blank"><img alt="Screenshot" src="images/screenshots/csgo-death-trigger.png" style="max-height: 340px"></a>
+							<a href="https://github.com/afska/el-dumper" target="_blank"><img alt="Screenshot" src="images/screenshots/eldumper.png" style="max-height: 340px"></a>
 						</p>
-	
-						<p>A short command line script made in Go that connects via Telnet to a <a href="https://en.wikipedia.org/wiki/Counter-Strike:_Global_Offensive" target="_blank">CS:GO</a> instance and triggers HTTP calls when you die.</p>
-						<p class="sourcecode"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/csgo-death-trigger" target="_blank">Source code</a></p>
+
+						<p>A Game Boy cartridge dumper that can read the ROM and read/write battery-backed RAM to manage games and save files.</p>
+						<p>It's based on insideGadget's <a href="https://github.com/insidegadgets/GBCartRead" target="_blank">GBCartRead</a>, but it adds a new graphical interface packed as an Electron app, so users don't have to download and execute Python scripts in order to dump the memory.</p>
+						<p class="sourcecode"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/el-dumper" target="_blank">Source code</a></p>
 					</div>
 				</div>
 
