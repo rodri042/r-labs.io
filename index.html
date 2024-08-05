@@ -254,10 +254,21 @@
 						</ul>							
 						<p>The flashcart type is autodetected and FAT partitions are supported via <a href="http://elm-chan.org/fsw/ff" target="_blank">ELM-ChaN's FatFs library</a>.
 						<ul>
-							<li>Only read operations are implemented in FatFs.</li>
-							<li>It reads using either DMA3 or DMA1.</li>
-							<li>In EverDrive mode, the latter 16MB of the ROM is unavailable while reading, so avoid using that part in your interrupt handlers, or your code might crash.</li>
-							<li>In EZ Flash mode, ROM is unavailable while using the SD card, so ~1KB of static EWRAM will be taken by some functions. Also, When reading, interrupts will be briefly disabled (<code>REG_IME = 0</code>) to avoid problems.</li>
+							<li><strong>Only read operations are implemented in FatFs.</strong></li>
+							<li>It reads using either <strong>DMA3</strong> or <strong>DMA1</strong>.</li>
+							<li>In <strong>EverDrive</strong> mode:
+								<ul>
+									<li>The latter 16MB of the ROM is unavailable while reading, so avoid using that part in your interrupt handlers, or your code might crash.</li>
+									<li>For this same reason, avoid calling soft-resetting while <code>flashcartio_is_reading</code>.</li>
+								</ul>
+							</li>
+							<li>In <strong>EZ Flash</strong> mode:
+								<ul>
+									<li>ROM is unavailable while using the SD card, so ~1KB of static EWRAM will be taken by some functions.</li>
+									<li>When reading, by default, interrupts will be briefly disabled (<code>REG_IME = 0</code>) to avoid problems.</li>
+									<li>The <i>EZ Flash Definitive Edition</i> works great out of the box, but in the original one you have to use <code>3,2</code> wait states and avoid writing to SRAM right before/after reading the microSD!</li>
+								</ul>
+							</li>
 						</ul>
 						<p class="sourcecode"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/gba-link-connection" target="_blank">Source code</a></p>
 					</div>
