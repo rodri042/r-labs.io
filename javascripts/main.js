@@ -36,6 +36,7 @@ function filterBy(tagName) {
 		});
 		currentFilter = null;
 		scrollToElement("index");
+		document.querySelector("#foldername").innerHTML = "projects";
 		return;
 	}
 
@@ -53,6 +54,7 @@ function filterBy(tagName) {
 	});
 
 	currentFilter = tagName;
+	document.querySelector("#foldername").innerHTML = tagName;
 	scrollToElement("index");
 }
 
