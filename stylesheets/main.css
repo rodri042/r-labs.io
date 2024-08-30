@@ -6,7 +6,7 @@ body {
   line-height: 1.5;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal,
     monospace;
-  min-width: 220px;
+  min-width: 520px;
   background-image: url(../images/bkg.png);
   background-repeat: repeat;
   background-color: #000;
@@ -294,6 +294,7 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: 100%;
   margin-bottom: 20px;
 }
 
@@ -337,28 +338,8 @@ a {
   margin-right: 8px;
 }
 
-.single-grid {
-  width: 50%;
-  align-self: center;
-  justify-self: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.medium-grid {
-  width: 75%;
-  align-self: center;
-  justify-self: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .centered-project {
   margin: 20px 15% !important;
-}
-
-.project:first-child {
-  margin: 0 0 20px;
 }
 
 .project {
@@ -402,6 +383,12 @@ a {
 }
 
 .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 2px;
+}
+
+.forced-grid {
   display: flex;
   flex-direction: row;
 }
@@ -440,12 +427,6 @@ a {
   }
 }
 
-@media (max-width: 800px) {
-  .single-grid {
-    width: 80%;
-  }
-}
-
 @media (max-width: 600px) {
   .head {
     flex-direction: column;
@@ -456,25 +437,17 @@ a {
     margin-left: 0;
   }
 
-  .grid {
-    flex-direction: column;
-  }
-  
   .project {
     margin-left: 0;
     margin-right: 0;
   }
 
-  .single-grid {
-    width: 100%;
-  }
-
-  .medium-grid {
-    width: 100%;
-  }
-
   .centered-project {
     margin-left: 0 !important;
     margin-right: 0 !important;
+  }
+
+  .forced-grid {
+    flex-direction: column;
   }
 }
