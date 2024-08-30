@@ -430,6 +430,13 @@ a {
   cursor: pointer;
 }
 
+.clearfilter {
+	position: fixed;
+	top: 16px;
+	right: 16px;
+	z-index: 9;
+}
+
 .tag:hover, .clerafilter:hover {
   background-color: #fafafa71;
 }

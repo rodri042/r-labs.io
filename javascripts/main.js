@@ -1,7 +1,7 @@
 function highlight() {
 	if (!window.location.hash) return;
 	document.querySelectorAll(".project").forEach((it) => it.style = "");
-	
+
 	const selectedProject = document.querySelector(window.location.hash);
 	if (selectedProject) {
 		const parentNode = selectedProject.parentNode;
@@ -35,6 +35,7 @@ function filterBy(tagName) {
 			it.style.display = "none"
 		});
 		currentFilter = null;
+		scrollToElement("index");
 		return;
 	}
 
@@ -50,7 +51,7 @@ function filterBy(tagName) {
 	document.querySelectorAll(`.clearfilter`).forEach((it) => {
 		it.style.display = "block"
 	});
-	
+
 	currentFilter = tagName;
 	scrollToElement("index");
 }
