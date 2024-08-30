@@ -421,13 +421,17 @@ a {
 }
 
 .tag, .clearfilter {
-  background-color: #e2e2e245;
+  background-color: #e2e2e250;
   color: white;
   border-radius: 6px;
   padding: 6px;
-  font-size: x-small;
+  font-size: small;
   user-select: none;
   cursor: pointer;
+}
+
+.tag:hover, .clerafilter:hover {
+  background-color: #fafafaaa;
 }
 
 .menutag {
@@ -441,10 +445,6 @@ a {
   right: 16px;
   z-index: 9;
   animation: scaleAnimation 1s ease-in-out infinite;
-}
-
-.tag:hover, .clerafilter:hover {
-  background-color: #fafafa71;
 }
 
 .nav-button {
