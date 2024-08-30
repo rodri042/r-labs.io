@@ -338,8 +338,14 @@ a {
   margin-right: 8px;
 }
 
-.centered-project {
-  margin: 20px 15% !important;
+.titleproject {
+  flex: 1;
+  margin: 0px 10px 20px;
+  border: groove 2px #5f5f5f;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px #2f2f2f;
+  padding: 15px;
+  margin-bottom: 20px;
 }
 
 .project {
@@ -357,7 +363,7 @@ a {
   position: relative;
 }
 
-.sourcecode {
+.right {
   text-align: right;
   position: absolute;
   bottom: 0;
@@ -388,11 +394,6 @@ a {
   gap: 2px;
 }
 
-.forced-grid {
-  display: flex;
-  flex-direction: row;
-}
-
 .year {
   color: #eaeaea;
 }
@@ -415,8 +416,25 @@ a {
   font-size: small;
 }
 
-.nav-button {
+.floatright {
   float: right;
+}
+
+.tag, .clearfilter {
+  background-color: #e2e2e245;
+  color: white;
+  border-radius: 6px;
+  padding: 6px;
+  font-size: x-small;
+  user-select: none;
+  cursor: pointer;
+}
+
+.tag:hover, .clerafilter:hover {
+  background-color: #fafafa71;
+}
+
+.nav-button {
   text-decoration: none;
   font-size: small;
 }
@@ -442,12 +460,8 @@ a {
     margin-right: 0;
   }
 
-  .centered-project {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-  }
-
-  .forced-grid {
-    flex-direction: column;
+  .titleproject {
+    margin-left: 0;
+    margin-right: 0;
   }
 }

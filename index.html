@@ -30,9 +30,9 @@
 		<div class="container">
 			<section id="main_content">
 				<a id="whoami" class="anchor" href="#whoami" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
-				<h2>/README.md</h2>
+				<h2>📝 /README.md</h2>
 
-				<div class="head project">
+				<div class="head titleproject">
 					<img src="images/profile.png" width="200" height="200" class="picture" />
 
 					<div class="introduction introduction-text">
@@ -56,26 +56,30 @@
 
 				<a id="index" class="anchor" href="#index" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
 				<div class="index">
-					<span>🎮 <a href="#videogames">video-games</a></span>
-					<span>👾 <a href="#gba">gba</a></span>
-					<span>🕹️ <a href="#nes">nes</a></span>
-					<span>🛠️ <a href="#tools">tools</a></span>
-					<span>🗑️ <a href="#archive">archive</a></span>
-					<span>🎶 <a href="#music">music</a></span>
+					<span class="tag" data-tag="video-games">🎮 video-games</span>
+					<span class="tag" data-tag="gba">👾 gba</span>
+					<span class="tag" data-tag="nes">🕹️ nes</span>
+					<span class="tag" data-tag="tools">🛠️ tools</span>
+					<span class="tag" data-tag="music">🎶 music</span>
+					<span class="tag" data-tag="archive">🗑️ archive</span>
+					<span class="clearfilter" data-tag="clear" style="display: none">❌ clear filter</span>
 				</div>
 
 				<a id="projects" class="anchor" href="#projects" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
-				<h2>💻 /software</h2>
+				<h2>💻 /projects</h2>
 
 				<div class="grid">
-					<div class="project">
+					<div class="project" data-tag="video-games">
 						<a id="mousewars" class="anchor" href="#mousewars" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
 						<h3>
 							<a href="https://mousewars.io" target="_blank">MouseWars.io</a>
 							<img alt="Web" class="button" src="images/icons/web.svg" />
 							<img alt="Steam" class="button" src="images/icons/steam.svg" />
 							<span class="year">(2017~2018)</span>
-							<a href="#mousewars" class="nav-button">🔗</a>
+							<div class="floatright">
+								<span class="tag">🎮 video-games</span>
+								<a href="#mousewars" class="nav-button">🔗</a>
+							</div>
 						</h3>
 
 						<p class="video-preview">
@@ -98,13 +102,16 @@
 						</ul>
 					</div>
 
-					<div class="project open-source">
+					<div class="project open-source" data-tag="video-games">
 						<a id="halu" class="anchor" href="#halu" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
 						<h3>
 							<a href="https://github.com/afska/halu-engine/releases/download/v1.0.0/Halu.apk" target="_blank">Halu</a>
 							<img alt="Android" class="button" src="images/icons/android.svg" />
 							<span class="year">(2015~2016)</span>
-							<a href="#halu" class="nav-button">🔗</a>
+							<div class="floatright">
+								<span class="tag">🎮 video-games</span>
+								<a href="#halu" class="nav-button">🔗</a>
+							</div>
 						</h3>
 
 						<p class="video-preview">
@@ -123,16 +130,20 @@
 							<li>🚀 <strong>Speed</strong> will intensify over time</li>
 						</ul>
 						<p>The game integrates Google Play leaderboards so players can compete for the best high score. You'll literally leave your friends' bodies behind as you surpass them!</p>
-						<p class="sourcecode"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/halu-engine" target="_blank">Source code</a></p>
+
+						<p class="right"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/halu-engine" target="_blank">Source code</a></p>
 					</div>
 
-					<div class="project open-source">
+					<div class="project open-source" data-tag="gba">
 						<a id="gba-remote-play" class="anchor" href="#gba-remote-play" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
 						<h3>
 							<a href="https://github.com/afska/gba-remote-play" target="_blank">gba-remote-play</a>
 							<img alt="GBA" class="button" src="images/icons/gba.png" />
 							<span class="year">(2021)</span>
-							<a href="#gba-remote-play" class="nav-button">🔗</a>
+							<div class="floatright">
+								<span class="tag">👾 gba</span>
+								<a href="#gba-remote-play" class="nav-button">🔗</a>
+							</div>
 						</h3>
 
 						<p class="video-preview">
@@ -153,16 +164,19 @@
 							<li>💥 <del>Crashes on the GB Micro! (yep, that's a feature)</del></li>
 						</ul>						
 						<p>📰 Read more on <a href="https://gizmodo.com/super-powered-cartridge-lets-the-game-boy-advance-run-p-1848109189" target="_blank">Gizmodo</a>, <a href="https://www.engadget.com/game-boy-advance-runs-playstation-games-164220518.html" target="_blank">Engadget</a>, <a href="https://hackaday.com/2021/11/22/gba-remote-play-upgrade-lets-you-play-playstation-on-the-bus/" target="_blank">Hackaday</a>, <a href="https://www.tomshardware.com/news/raspberry-pi-retropie-gba" target="_blank">Tom's Hardware</a> and <a href="https://magpi.raspberrypi.com/issues/114" target="_blank">The MagPi</a>.</p>
-						<p class="sourcecode"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/gba-remote-play" target="_blank">Source code</a></p>
+						<p class="right"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/gba-remote-play" target="_blank">Source code</a></p>
 					</div>
 
-					<div class="project open-source">
-						<a id="beatbeast" class="anchor" href="#beatbeast" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+					<div class="project open-source" data-tag="gba">
+						<a id="beat-beast" class="anchor" href="#beat-beast" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
 						<h3>
 							<a href="https://afska.itch.io/beat-beast" target="_blank">BeatBeast</a>
 							<img alt="GBA" class="button" src="images/icons/gba.png" />
 							<span class="year">(2024)</span>
-							<a href="#beatbeast" class="nav-button">🔗</a>
+							<div class="floatright">
+								<span class="tag">👾 gba</span>
+								<a href="#beat-beast" class="nav-button">🔗</a>
+							</div>
 						</h3>
 
 						<p class="image-preview">
@@ -179,16 +193,19 @@
 						<p>Experience 15 minutes of intense fun, and even more if rhythm games usually have you off beat. Featuring an amazing 3D title screen, powered by an impressive stack of 150 BMP files pushing 3.66 triangles per second! Enjoy menus accompanied by Good Sounding Music (GSM) and dive into main gameplay with Perfectly Crafted Melodies (PCM)—it's a sound blast!</p>
 						
 						<p>▶️ Watch <a href="https://www.youtube.com/watch?v=kFq0AMUZ1Rg" target="_blank">our playthrough</a> of the Hard difficulty mode.</p>
-						<p class="sourcecode"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/beat-beast" target="_blank">Source code</a></p>
+						<p class="right"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/beat-beast" target="_blank">Source code</a></p>
 					</div>
 
-					<div class="project open-source">
+					<div class="project open-source" data-tag="gba">
 						<a id="piugba" class="anchor" href="#piugba" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
 						<h3>
 							<a href="https://github.com/afska/piugba" target="_blank">piuGBA</a>
 							<img alt="GBA" class="button" src="images/icons/gba.png" />
 							<span class="year">(2020~2024)</span>
-							<a href="#piugba" class="nav-button">🔗</a>
+							<div class="floatright">
+								<span class="tag">👾 gba</span>
+								<a href="#piugba" class="nav-button">🔗</a>
+							</div>
 						</h3>
 
 						<p class="image-preview">
@@ -212,17 +229,20 @@
 						<p>▶️ Watch the <a href="https://www.youtube.com/watch?v=S8VgSOcHs5A" target="_blank">demo video</a>.</p>
 						<p>💬 Go to the <a href="https://discord.com/invite/JE33cc2" target="_blank">Discord server</a> to find Download links and user-created content.</p>
 						<p>📰 Read more on <a href="https://hackaday.com/2024/05/16/pump-it-up-gets-homebew-gba-port-that-rocks/" target="_blank">Hackaday</a>.</p>
-						<p class="sourcecode"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/piugba" target="_blank">Source code</a></p>
+						<p class="right"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/piugba" target="_blank">Source code</a></p>
 					</div>
 
-					<div class="project open-source">
+					<div class="project open-source" data-tag="gba">
 						<a id="gba-link-connection" class="anchor" href="#gba-link-connection" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
 						<h3>
 							<a href="https://github.com/afska/gba-link-connection" target="_blank">gba-link-connection</a>
 							<img alt="GitHub" class="button" src="images/icons/github.svg" />
 							<img alt="GBA" class="button" src="images/icons/gba.png" />
 							<span class="year">(2020~2024)</span>
-							<a href="#gba-link-connection" class="nav-button">🔗</a>
+							<div class="floatright">
+								<span class="tag">👾 gba</span>
+								<a href="#gba-link-connection" class="nav-button">🔗</a>
+							</div>
 						</h3>
 
 						<p class="image-preview">
@@ -244,17 +264,20 @@
 							<li>🖱️ <a href="https://github.com/afska/gba-link-connection/blob/master/lib/LinkPS2Mouse.hpp" target="_blank">LinkPS2Mouse.hpp</a>: Connect a <strong>PS/2 mouse</strong> to the GBA for extended controls!</li>
 							<li>⌨️ <a href="https://github.com/afska/gba-link-connection/blob/master/lib/LinkPS2Keyboard.hpp" target="_blank">LinkPS2Keyboard.hpp</a>: Connect a <strong>PS/2 keyboard</strong> to the GBA for extended controls!</li>
 						</ul>							
-						<p class="sourcecode"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/gba-link-connection" target="_blank">Source code</a></p>
+						<p class="right"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/gba-link-connection" target="_blank">Source code</a></p>
 					</div>
 
-					<div class="project open-source">
+					<div class="project open-source" data-tag="gba">
 						<a id="gba-flashcartio" class="anchor" href="#gba-flashcartio" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
 						<h3>
 							<a href="https://github.com/afska/gba-flashcartio" target="_blank">gba-flashcartio</a>
 							<img alt="GitHub" class="button" src="images/icons/github.svg" />
 							<img alt="GBA" class="button" src="images/icons/gba.png" />
 							<span class="year">(2024)</span>
-							<a href="#gba-flashcartio" class="nav-button">🔗</a>
+							<div class="floatright">
+								<span class="tag">👾 gba</span>
+								<a href="#gba-flashcartio" class="nav-button">🔗</a>
+							</div>
 						</h3>
 
 						<p class="image-preview">
@@ -284,16 +307,38 @@
 								</ul>
 							</li>
 						</ul>
-						<p class="sourcecode"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/gba-link-connection" target="_blank">Source code</a></p>
+						<p class="right"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/gba-link-connection" target="_blank">Source code</a></p>
 					</div>
 
-					<div class="project open-source">
+					<div class="project" data-tag="music">
+						<a id="a-weird-tale" class="anchor" href="#a-weird-tale" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+						<h3>
+							<a href="https://open.spotify.com/album/5uEzRzECWW6vskxf3MKrUd" target="_blank">A weird tale</a>
+							<img alt="Spotify" class="button" src="images/icons/spotify.svg" />
+							<span class="year">(2022)</span>
+							<div class="floatright">
+								<span class="tag">🎶 music</span>
+								<a href="#a-weird-tale" class="nav-button">🔗</a>
+							</div>
+						</h3>
+
+						<p class="image-preview">
+							<a href="https://open.spotify.com/album/5uEzRzECWW6vskxf3MKrUd" target="_blank"><img alt="Cover" src="images/a-weird-tale.jpg" style="max-height: 340px"></a>
+						</p>
+
+						<p>While playing with Aíris, I also composed some songs for a project with my friend <a href="https://www.youtube.com/c/Sauzasantiago/videos" target="_blank">Santiago Sauza</a>. Three years later, we finally finished recording and mixing the tracks, and we published them on the most common streaming platforms. The result is a powerful metal album that we're really proud of!</p>
+					</div>
+
+					<div class="project open-source" data-tag="nes">
 						<a id="nescore" class="anchor" href="#nescore" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
 						<h3>
 							<a href="https://afska.github.io/nescore" target="_blank">NesCore</a>
 							<img alt="Web" class="button" src="images/icons/web.svg" />
 							<span class="year">(2022)</span>
-							<a href="#nescore" class="nav-button">🔗</a>
+							<div class="floatright">
+								<span class="tag">🕹️ nes</span>
+								<a href="#nescore" class="nav-button">🔗</a>
+							</div>
 						</h3>
 
 						<p class="image-preview">
@@ -310,16 +355,38 @@
 							<li>💾 Save states support</li>
 							<li>🌎 Web frontend using <a href="https://www.w3.org/TR/2021/NOTE-workers-20210128/" target="_blank">Web Workers</a> and <a href="https://www.w3.org/TR/gamepad/">Gamepad API</a></li>
 						</ul>
-						<p class="sourcecode"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/nescore" target="_blank">Source code</a></p>
+						<p class="right"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/nescore" target="_blank">Source code</a></p>
 					</div>
 
-					<div class="project open-source">
+					<div class="project" data-tag="music">
+						<a id="airis-ep" class="anchor" href="#airis-ep" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+						<h3>
+							<a href="https://airisprogresivo.bandcamp.com/" target="_blank">Aíris EP</a>
+							<img alt="Bandcamp" class="button" src="images/icons/bandcamp.svg" />
+							<span class="year">(2019)</span>
+							<div class="floatright">
+								<span class="tag">🎶 music</span>
+								<a href="#airis-ep" class="nav-button">🔗</a>
+							</div>
+						</h3>
+
+						<p class="image-preview">
+							<a href="https://airisprogresivo.bandcamp.com/" target="_blank"><img alt="Cover" src="images/airis-ep.jpg" style="max-height: 340px"></a>
+						</p>
+
+						<p>In 2019, I was lucky enough to befriend some very talented people, and we formed a band where we rehearsed every week and recorded this prog-rock demo album! Although we eventually stopped playing together, we’re still close friends, and they hold a special place in my heart. This project remains one of my favorite musical endeavors.</p>
+					</div>
+
+					<div class="project open-source" data-tag="nes">
 						<a id="nestation" class="anchor" href="#nestation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
 						<h3>
 							<a href="https://afska.github.io/nestation" target="_blank">NEStation</a>
 							<img alt="Web" class="button" src="images/icons/web.svg" />
 							<span class="year">(2019)</span>
-							<a href="#nestation" class="nav-button">🔗</a>
+							<div class="floatright">
+								<span class="tag">🕹️ nes</span>
+								<a href="#nestation" class="nav-button">🔗</a>
+							</div>
 						</h3>
 
 						<p class="image-preview">
@@ -337,17 +404,20 @@
 							<li>🎮 Gamepad support</li>
 							<li>📺 CRT TV emulation</li>
 						</ul>
-						<p class="sourcecode"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/nestation" target="_blank">Source code</a></p>
+						<p class="right"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/nestation" target="_blank">Source code</a></p>
 					</div>
 				
-					<div class="project open-source">
+					<div class="project open-source" data-tag="tools">
 						<a id="play-and-shift" class="anchor" href="#play-and-shift" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
 						<h3>
 							<a href="https://github.com/afska/play-and-shift" target="_blank">play-and-shift</a>
 							<img alt="Web" class="button" src="images/icons/windows.svg" />
 							<img alt="Linux" class="button" src="images/icons/linux.svg" />
 							<span class="year">(2022)</span>
-							<a href="#play-and-shift" class="nav-button">🔗</a>
+							<div class="floatright">
+								<span class="tag">🛠️ tools</span>
+								<a href="#play-and-shift" class="nav-button">🔗</a>
+							</div>
 						</h3>
 	
 						<p class="image-preview">
@@ -358,16 +428,19 @@
 
 						<p>I use this to quickly change a song's key when playing an instrument.</p>
 
-						<p class="sourcecode"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/play-and-shift" target="_blank">Source code</a></p>
+						<p class="right"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/play-and-shift" target="_blank">Source code</a></p>
 					</div>
 
-					<div class="project open-source">
+					<div class="project open-source" data-tag="tools">
 						<a id="el-dumper" class="anchor" href="#el-dumper" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
 						<h3>
 							<a href="https://github.com/afska/el-dumper" target="_blank">ElDumper</a>
 							<img alt="Arduino" class="button" src="images/icons/arduino.svg" />
 							<span class="year">(2019)</span>
-							<a href="#el-dumper" class="nav-button">🔗</a>
+							<div class="floatright">
+								<span class="tag">🛠️ tools</span>
+								<a href="#el-dumper" class="nav-button">🔗</a>
+							</div>
 						</h3>
 
 						<p class="image-preview">
@@ -376,16 +449,19 @@
 
 						<p>A Game Boy cartridge dumper that can read the ROM and read/write battery-backed RAM to manage games and save files.</p>
 						<p>It's based on insideGadget's <a href="https://github.com/insidegadgets/GBCartRead" target="_blank">GBCartRead</a>, but it adds a new graphical interface packed as an Electron app, so users don't have to download and execute Python scripts in order to dump the memory.</p>
-						<p class="sourcecode"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/el-dumper" target="_blank">Source code</a></p>
+						<p class="right"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/el-dumper" target="_blank">Source code</a></p>
 					</div>
 
-					<div class="project open-source">
+					<div class="project open-source" data-tag="tools">
 						<a id="este-gano" class="anchor" href="#este-gano" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
 						<h3>
 							<a href="https://afska.github.io/este-gano" target="_blank">éste-ganó</a>
 							<img alt="Web" class="button" src="images/icons/web.svg" />
 							<span class="year">(2022)</span>
-							<a href="#este-gano" class="nav-button">🔗</a>
+							<div class="floatright">
+								<span class="tag">🛠️ tools</span>
+								<a href="#este-gano" class="nav-button">🔗</a>
+							</div>
 						</h3>
 	
 						<p class="image-preview">
@@ -393,17 +469,20 @@
 						</p>
 	
 						<p><a href="https://en.wikipedia.org/wiki/Steganography" target="_blank">Steganography</a> toy that encodes secret messages in strings by using zero-width Unicode characters. A Chrome extension allows highlighting the hidden parts.</p>
-						<p class="sourcecode"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/este-gano" target="_blank">Source code</a></p>
+						<p class="right"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/este-gano" target="_blank">Source code</a></p>
 					</div>
 					
-					<div class="project open-source">
+					<div class="project open-source" data-tag="tools">
 						<a id="quickp2p" class="anchor" href="#quickp2p" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
 						<h3>
 							<a href="https://github.com/afska/quickp2p" target="_blank">quickp2p</a>
 							<img alt="GitHub" class="button" src="images/icons/github.svg" />
 							<img alt="Web" class="button" src="images/icons/web.svg" />
 							<span class="year">(2019)</span>
-							<a href="#quickp2p" class="nav-button">🔗</a>
+							<div class="floatright">
+								<span class="tag">🛠️ tools</span>
+								<a href="#quickp2p" class="nav-button">🔗</a>
+							</div>
 						</h3>
 
 						<p class="image-preview">
@@ -411,16 +490,19 @@
 						</p>
 
 						<p>A JavaScript library that simplifies connecting two web browsers in a peer-to-peer fashion through <a href="https://webrtc.org/" target="_blank">WebRTC</a> Data Channels.</p>
-						<p class="sourcecode"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/quickp2p" target="_blank">Source code</a></p>
+						<p class="right"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/quickp2p" target="_blank">Source code</a></p>
 					</div>
 
-					<div class="project open-source">
+					<div class="project open-source" data-tag="tools">
 						<a id="dropbox-universal-backup-tool" class="anchor" href="#dropbox-universal-backup-tool" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
 						<h3>
 							<a href="https://github.com/afska/dropbox-universal-backup-tool" target="_blank">dropbox-universal-backup-tool</a>
 							<img alt="Linux" class="button" src="images/icons/linux.svg" />
 							<span class="year">(2015)</span>
-							<a href="#dropbox-universal-backup-tool" class="nav-button">🔗</a>
+							<div class="floatright">
+								<span class="tag">🛠️ tools</span>
+								<a href="#dropbox-universal-backup-tool" class="nav-button">🔗</a>
+							</div>
 						</h3>
 
 						<p class="image-preview">
@@ -429,16 +511,19 @@
 
 						<p>A command-line tool that synchronizes directories with <a href="https://www.dropbox.com/" target="_blank">Dropbox</a>. It uploads the files from disk to the cloud, with the added feature of being able to preview changes before hitting the API.</p>
 						<p>It only syncs in one direction, so it's safe for pushing incremental backups, and it gives you more control over what types of files are uploaded or not.</p>
-						<p class="sourcecode"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/dropbox-universal-backup-tool" target="_blank">Source code</a></p>
+						<p class="right"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/dropbox-universal-backup-tool" target="_blank">Source code</a></p>
 					</div>
 
-					<div class="project open-source">
+					<div class="project open-source" data-tag="tools">
 						<a id="arduino-midi-player" class="anchor" href="#arduino-midi-player" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
 						<h3>
 							<a href="https://github.com/afska/arduino-midi-player" target="_blank">Arduino MIDI Player</a>
 							<img alt="Arduino" class="button" src="images/icons/arduino.svg" />
 							<span class="year">(2014)</span>
-							<a href="#arduino-midi-player" class="nav-button">🔗</a>
+							<div class="floatright">
+								<span class="tag">🛠️ tools</span>
+								<a href="#arduino-midi-player" class="nav-button">🔗</a>
+							</div>
 						</h3>
 
 						<p class="video-preview">
@@ -450,28 +535,19 @@
 
 						<p>A MIDI player made of buzzers. It started as a proof of concept for controlling an Arduino board using <a href="https://coffeescript.org/" target="_blank">CoffeeScript</a>.</p>
 						<p>It seems like Arduino boards can be controlled by any computer using a well-known protocol that constantly sends instructions to the board via a serial connection. Fun stuff.</p>
-						<p class="sourcecode"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/arduino-midi-player" target="_blank">Source code</a></p>
+						<p class="right"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/arduino-midi-player" target="_blank">Source code</a></p>
 					</div>
-				</div>
 
-				<br>
-				<hr>
-				<br>
-
-				<a id="archive" class="anchor" href="#archive" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
-				<h3>🗑️ /software/archive <a class="up-button" href="#index">⬆️</a></h3>
-				<blockquote class="quoteuote">
-					<p>I started these projects when I was learning programming. They are written in Visual Basic 6, compiled and tested on Windows XP. I'll only post some binaries—the code is trash, trust me, you don't want to look at it.</p>
-				</blockquote>
-
-				<div class="forced-grid">
-					<div class="project">
+					<div class="project" data-tag="archive">
 						<a id="mousewars-classic" class="anchor" href="#mousewars-classic" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
 						<h3>
 							<a href="https://github.com/r-labs-io/r-labs.github.io/releases/download/1.0.0/MouseWars-Setup.exe" target="_blank">MouseWars Classic</a>
 							<img alt="Windows" class="button" src="images/icons/windows.svg" />
 							<span class="year">(2008~2010)</span>
-							<a href="#mousewars-classic" class="nav-button">🔗</a>
+							<div class="floatright">
+								<span class="tag">🗑️ archive</span>
+								<a href="#mousewars-classic" class="nav-button">🔗</a>
+							</div>
 						</h3>
 
 						<p class="video-preview">
@@ -486,15 +562,22 @@
 						<p>The game works over TCP/IP, allowing play over the Internet or a LAN. For solo play, a Bot is also available.</p>
 
 						<p>I ended up remaking this game in 2017, and it evolved into what is now known as <a href="#mousewars">MouseWars.io</a>.</p>
+					
+						<blockquote class="quoteuote">
+							<p>Written in Visual Basic 6, compiled and tested on Windows XP.</p>
+						</blockquote>
 					</div>
 
-					<div class="project">
+					<div class="project" data-tag="archive">
 						<a id="el-chat" class="anchor" href="#el-chat" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
 						<h3>
 							<a href="https://github.com/r-labs-io/r-labs.github.io/releases/download/1.0.0/ElChat-Setup.exe" target="_blank">El Chat</a>
 							<img alt="Windows" class="button" src="images/icons/windows.svg" />
 							<span class="year">(2004~2005)</span>
-							<a href="#el-chat" class="nav-button">🔗</a>
+							<div class="floatright">
+								<span class="tag">🗑️ archive</span>
+								<a href="#el-chat" class="nav-button">🔗</a>
+							</div>
 						</h3>
 
 						<p class="image-preview">
@@ -504,15 +587,22 @@
 						<p>A chat client that my group of friends and I used a lot, inspired by the old MSN Messenger.</p>
 						
 						<p>The program supported emoticons, formatting, private conversations, saving chat history, theming, custom servers and moderation.</p>
+
+						<blockquote class="quoteuote">
+							<p>Written in Visual Basic 6, compiled and tested on Windows XP.</p>
+						</blockquote>
 					</div>
 
-					<div class="project">
+					<div class="project" data-tag="archive">
 						<a id="hackthesystem" class="anchor" href="#hackthesystem" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
 						<h3>
 							HackTheSystem
 							<img alt="Windows" class="button" src="images/icons/windows.svg" />
 							<span class="year">(2004~2007)</span>
-							<a href="#hackthesystem" class="nav-button">🔗</a>
+							<div class="floatright">
+								<span class="tag">🗑️ archive</span>
+								<a href="#hackthesystem" class="nav-button">🔗</a>
+							</div>
 						</h3>
 
 						<p class="image-preview">
@@ -520,47 +610,10 @@
 						</p>
 
 						<p>Fifteen-year-old me wanted to be "a hacker," so I found some online material about building a trojan horse and followed it. That experience made me love network programming and gave me a foundation in TCP sockets, inter-process communication, Win32 API calls, and more. Nobody got hacked in the process. Or maybe a few?</p>
-					</div>
-				</div>
 
-				<br>
-				<hr>
-				<br>
-
-				<a id="music" class="anchor" href="#music" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
-				<h2>🎶 /music <a class="up-button" href="#index">⬆️</a></h2>
-
-				<div class="grid medium-grid">
-					<div class="project">
-						<a id="a-weird-tale" class="anchor" href="#a-weird-tale" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
-						<h3>
-							<a href="https://open.spotify.com/album/5uEzRzECWW6vskxf3MKrUd" target="_blank">A weird tale</a>
-							<img alt="Spotify" class="button" src="images/icons/spotify.svg" />
-							<span class="year">(2022)</span>
-							<a href="#a-weird-tale" class="nav-button">🔗</a>
-						</h3>
-
-						<p class="image-preview">
-							<a href="https://open.spotify.com/album/5uEzRzECWW6vskxf3MKrUd" target="_blank"><img alt="Cover" src="images/a-weird-tale.jpg" style="max-height: 340px"></a>
-						</p>
-
-						<p>While playing with Aíris, I also composed some songs for a project with my friend <a href="https://www.youtube.com/c/Sauzasantiago/videos" target="_blank">Santiago Sauza</a>. Three years later, we finally finished recording and mixing the tracks, and we published them on the most common streaming platforms. The result is a powerful metal album that we're really proud of!</p>
-					</div>
-
-					<div class="project">
-						<a id="airis-ep" class="anchor" href="#airis-ep" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
-						<h3>
-							<a href="https://airisprogresivo.bandcamp.com/" target="_blank">Aíris EP</a>
-							<img alt="Bandcamp" class="button" src="images/icons/bandcamp.svg" />
-							<span class="year">(2019)</span>
-							<a href="#airis-ep" class="nav-button">🔗</a>
-						</h3>
-
-						<p class="image-preview">
-							<a href="https://airisprogresivo.bandcamp.com/" target="_blank"><img alt="Cover" src="images/airis-ep.jpg" style="max-height: 340px"></a>
-						</p>
-
-						<p>In 2019, I was lucky enough to befriend some very talented people, and we formed a band where we rehearsed every week and recorded this prog-rock demo album! Although we eventually stopped playing together, we’re still close friends, and they hold a special place in my heart. This project remains one of my favorite musical endeavors.</p>
+						<blockquote class="quoteuote">
+							<p>Written in Visual Basic 6, compiled and tested on Windows XP.</p>
+						</blockquote>
 					</div>
 				</div>
 			</section>
