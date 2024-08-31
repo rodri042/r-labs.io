@@ -294,7 +294,7 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 100%;
+  width: 95%;
   margin-bottom: 20px;
 }
 
@@ -313,7 +313,6 @@ a {
   flex: 1;
   margin-left: 16px;
   border-radius: 8px;
-  border: groove 2px #5f5f5f;
   padding-left: 16px;
   padding-right: 16px;
 }
@@ -340,7 +339,6 @@ a {
 
 .titleproject {
   flex: 1;
-  margin: 0px 10px 20px;
   border: groove 2px #5f5f5f;
   border-radius: 10px;
   box-shadow: 3px 3px 3px #2f2f2f;
