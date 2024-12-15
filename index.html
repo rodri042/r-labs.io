@@ -196,16 +196,15 @@
 						<ul>
 							<li><strong>Only read operations are implemented in FatFs.</strong></li>
 							<li>It reads using either <strong>DMA3</strong> or <strong>DMA1</strong>.</li>
-							<li>In <strong>EverDrive</strong> mode:
+							<li>While reading, flashcarts make part of the ROM inaccessible during the operation. To prevent issues, by default, interrupts are briefly disabled (<code>REG_IME = 0</code>)</li>
+							<li><strong>EverDrive</strong> notes:
 								<ul>
-									<li>The latter 16MB of the ROM is unavailable while reading, so avoid using that part in your interrupt handlers, or your code might crash.</li>
-									<li>For this same reason, avoid soft-resetting while <code>flashcartio_is_reading</code>.</li>
+									<li>Since the last 16 MB of ROM are unavailable while using the SD card, make sure your linker script places these functions in the first 16 MB of ROM or in RAM.</li>
 								</ul>
 							</li>
-							<li>In <strong>EZ Flash</strong> mode:
+							<li><strong>EZ Flash</strong> notes:
 								<ul>
-									<li>ROM is unavailable while using the SD card, so ~1KB of static EWRAM will be taken by some functions.</li>
-									<li>When reading, by default, interrupts will be briefly disabled (<code>REG_IME = 0</code>) to avoid problems.</li>
+									<li>Since ROM is unavailable while using the SD card, ~1 KB of static EWRAM will be taken by some functions.</li>
 									<li>The <i>EZ Flash Definitive Edition</i> works great out of the box, but in the original one you have to use <code>3,2</code> wait states and avoid writing to SRAM right before/after reading the microSD!</li>
 								</ul>
 							</li>
