@@ -38,7 +38,8 @@
 					<div class="introduction introduction-text">
 						<p>Hi! I'm Rodrigo Alfonso (@<strong>afska</strong>)*, a software developer and musician from Argentina.</p>
 						<p>I'm interested in 💻 computers, 🤘 metal, and 👾 retro gaming.<br />
-						This page showcases some personal projects that I've developed in my free time.</p>
+						This page showcases some personal projects that I've developed in my free time.<br /><br />
+						If you like my open-source work, please consider <a href="https://buymeacoffee.com/afska" target="_blank">supporting me</a> 💜</p>
 						<p>
 							<span>You can find me on</span>
 							<span class="social-buttons">
@@ -56,9 +57,9 @@
 
 				<a id="index" class="anchor" href="#index" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
 				<div class="index">
-					<span class="menutag tag" data-tag="video-games">🎮 video-games</span>
-					<span class="menutag tag" data-tag="gba">👾 gba</span>
-					<span class="menutag tag" data-tag="nes">🕹️ nes</span>
+					<span class="menutag tag" data-tag="video games">🎮 video games</span>
+					<span class="menutag tag" data-tag="gba homebrew">👾 gba homebrew</span>
+					<span class="menutag tag" data-tag="nes emulation">🕹️ nes emulation</span>
 					<span class="menutag tag" data-tag="tools">🛠️ tools</span>
 					<span class="menutag tag" data-tag="music">🎶 music</span>
 					<span class="menutag tag" data-tag="archive">🗑️ archive</span>
@@ -69,14 +70,70 @@
 				<h2>📁 /<span id="foldername">projects</span></h2>
 
 				<div class="grid">
-					<div class="project open-source" data-tag="gba">
+					<div class="project" data-tag="nes emulation">
+						<a id="emudevz" class="anchor" href="#emudevz" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+						<h3>
+							<a href="https://afska.github.io/emudevz" target="_blank">EmuDevz</a>
+							<img alt="Web" class="button" src="images/icons/web.svg" />
+							<span class="year">(2023~2025)</span>
+							<div class="floatright">
+								<span class="tag">🕹️ nes emulation</span>
+								<a href="#emudevz" class="nav-button">🔗</a>
+							</div>
+						</h3>
+
+						<p class="video-preview">
+							<iframe width="600" height="330"
+								src="https://youtube.com/embed/sBhFulSp4KQ"
+								frameborder="0" allowFullScreen
+							></iframe>
+						</p>
+
+						<p><a href="https://afska.github.io/emudevz" target="_blank">EmuDevz</a> is an educational web game that teaches players how to create an emulator and evaluates their code with unit and video tests. Initially, it presents a buggy emulator that shows glitches, and when the player finishes a unit (e.g. the PPU), the game integrates the user's code into the emulator to fix the bugs.</p>
+						<p>🚧 The game is under development, but in the meantime you can:</p>
+						<ul>
+								<li>🔊 Listen to the <a href="https://distrokid.com/hyperfollow/synthenia/emudevz-original-game-soundtrack" target="_blank">Original Soundtrack</a>.</li>
+								<li>🌐 Join the <a href="https://discord.gg/mFGDxSxEJu" target="_blank">Discord server</a> for updates.</li>
+						</ul>						
+					</div>
+
+					<div class="project open-source" data-tag="nes emulation">
+						<a id="nescore" class="anchor" href="#nescore" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+						<h3>
+							<a href="https://afska.github.io/nescore" target="_blank">NesCore</a>
+							<img alt="Web" class="button" src="images/icons/web.svg" />
+							<span class="year">(2019, 2022, 2025)</span>
+							<div class="floatright">
+								<span class="tag">🕹️ nes emulation</span>
+								<a href="#nescore" class="nav-button">🔗</a>
+							</div>
+						</h3>
+
+						<p class="image-preview">
+							<a href="https://afska.github.io/nescore" target="_blank"><img alt="Screenshot" src="images/screenshots/nescore.png" style="max-height: 332px"></a>
+						</p>
+
+						<p>A NES Emulator made in JavaScript for educational purposes.</p>
+						<p>Its main objective is to reflect the NES internals as simply as possible by using clean, object-oriented code. It doesn't have any complex bitwise operations, huge switch-case statements or files with lots of magic numbers.</p>
+						<ul>
+							<li>👾 It emulates the NES</li>
+							<li>👨‍🔧 It plays <a href="https://en.wikipedia.org/wiki/Super_Mario_Bros._3" target="_blank">Super Mario Bros. 3</a>!</li>
+							<li>💻 CPU, 🖥️ PPU, 🔊 APU</li>
+							<li>🐏 SRAM support</li>
+							<li>💾 Save states support</li>
+							<li>🌎 Web frontend using <a href="https://www.w3.org/TR/2021/NOTE-workers-20210128/" target="_blank">Web Workers</a> and <a href="https://www.w3.org/TR/gamepad/">Gamepad API</a></li>
+						</ul>
+						<p class="right"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/nescore" target="_blank">Source code</a></p>
+					</div>
+
+					<div class="project open-source" data-tag="gba homebrew">
 						<a id="beat-beast" class="anchor" href="#beat-beast" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
 						<h3>
 							<a href="https://afska.itch.io/beat-beast" target="_blank">BeatBeast</a>
 							<img alt="GBA" class="button" src="images/icons/gba.png" />
 							<span class="year">(2024)</span>
 							<div class="floatright">
-								<span class="tag">👾 gba</span>
+								<span class="tag">👾 gba homebrew</span>
 								<a href="#beat-beast" class="nav-button">🔗</a>
 							</div>
 						</h3>
@@ -99,14 +156,14 @@
 						<p class="right"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/beat-beast" target="_blank">Source code</a></p>
 					</div>
 
-					<div class="project open-source" data-tag="gba">
+					<div class="project open-source" data-tag="gba homebrew">
 						<a id="piugba" class="anchor" href="#piugba" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
 						<h3>
 							<a href="https://github.com/afska/piugba" target="_blank">piuGBA</a>
 							<img alt="GBA" class="button" src="images/icons/gba.png" />
-							<span class="year">(2020~2024)</span>
+							<span class="year">(2020~2025)</span>
 							<div class="floatright">
-								<span class="tag">👾 gba</span>
+								<span class="tag">👾 gba homebrew</span>
 								<a href="#piugba" class="nav-button">🔗</a>
 							</div>
 						</h3>
@@ -135,15 +192,15 @@
 						<p class="right"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/piugba" target="_blank">Source code</a></p>
 					</div>
 
-					<div class="project open-source" data-tag="gba">
+					<div class="project open-source" data-tag="gba homebrew">
 						<a id="gba-link-connection" class="anchor" href="#gba-link-connection" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
 						<h3>
 							<a href="https://github.com/afska/gba-link-connection" target="_blank">gba-link-connection</a>
 							<img alt="GitHub" class="button" src="images/icons/github.svg" />
 							<img alt="GBA" class="button" src="images/icons/gba.png" />
-							<span class="year">(2020~2024)</span>
+							<span class="year">(2020~2025)</span>
 							<div class="floatright">
-								<span class="tag">👾 gba</span>
+								<span class="tag">👾 gba homebrew</span>
 								<a href="#gba-link-connection" class="nav-button">🔗</a>
 							</div>
 						</h3>
@@ -173,7 +230,7 @@
 						<p class="right"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/gba-link-connection" target="_blank">Source code</a></p>
 					</div>
 
-					<div class="project open-source" data-tag="gba">
+					<div class="project open-source" data-tag="gba homebrew">
 						<a id="gba-flashcartio" class="anchor" href="#gba-flashcartio" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
 						<h3>
 							<a href="https://github.com/afska/gba-flashcartio" target="_blank">gba-flashcartio</a>
@@ -181,7 +238,7 @@
 							<img alt="GBA" class="button" src="images/icons/gba.png" />
 							<span class="year">(2024)</span>
 							<div class="floatright">
-								<span class="tag">👾 gba</span>
+								<span class="tag">👾 gba homebrew</span>
 								<a href="#gba-flashcartio" class="nav-button">🔗</a>
 							</div>
 						</h3>
@@ -213,35 +270,6 @@
 							</li>
 						</ul>
 						<p class="right"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/gba-link-connection" target="_blank">Source code</a></p>
-					</div>
-
-					<div class="project open-source" data-tag="nes">
-						<a id="nescore" class="anchor" href="#nescore" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
-						<h3>
-							<a href="https://afska.github.io/nescore" target="_blank">NesCore</a>
-							<img alt="Web" class="button" src="images/icons/web.svg" />
-							<span class="year">(2022)</span>
-							<div class="floatright">
-								<span class="tag">🕹️ nes</span>
-								<a href="#nescore" class="nav-button">🔗</a>
-							</div>
-						</h3>
-
-						<p class="image-preview">
-							<a href="https://afska.github.io/nescore" target="_blank"><img alt="Screenshot" src="images/screenshots/nescore.png" style="max-height: 332px"></a>
-						</p>
-
-						<p>A NES Emulator made in JavaScript for educational purposes.</p>
-						<p>Its main objective is to reflect the NES internals as simply as possible by using clean, object-oriented code. It doesn't have any complex bitwise operations, huge switch-case statements or files with lots of magic numbers.</p>
-						<ul>
-							<li>👾 It emulates the NES</li>
-							<li>👨‍🔧 It plays <a href="https://en.wikipedia.org/wiki/Super_Mario_Bros._3" target="_blank">Super Mario Bros. 3</a>!</li>
-							<li>💻 CPU, 🖥️ PPU, 🔊 APU</li>
-							<li>🐏 SRAM support</li>
-							<li>💾 Save states support</li>
-							<li>🌎 Web frontend using <a href="https://www.w3.org/TR/2021/NOTE-workers-20210128/" target="_blank">Web Workers</a> and <a href="https://www.w3.org/TR/gamepad/">Gamepad API</a></li>
-						</ul>
-						<p class="right"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/nescore" target="_blank">Source code</a></p>
 					</div>
 
 					<div class="project" data-tag="music">
@@ -307,14 +335,14 @@
 						<p class="right"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/play-and-shift" target="_blank">Source code</a></p>
 					</div>
 
-					<div class="project open-source" data-tag="gba">
+					<div class="project open-source" data-tag="gba homebrew">
 						<a id="gba-remote-play" class="anchor" href="#gba-remote-play" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
 						<h3>
 							<a href="https://github.com/afska/gba-remote-play" target="_blank">gba-remote-play</a>
 							<img alt="GBA" class="button" src="images/icons/gba.png" />
 							<span class="year">(2021)</span>
 							<div class="floatright">
-								<span class="tag">👾 gba</span>
+								<span class="tag">👾 gba homebrew</span>
 								<a href="#gba-remote-play" class="nav-button">🔗</a>
 							</div>
 						</h3>
@@ -359,14 +387,14 @@
 						<p>In 2019, I was lucky enough to befriend some very talented people, and we formed a band where we rehearsed every week and recorded this prog-rock demo album! Although we eventually stopped playing together, we’re still close friends, and they hold a special place in my heart. This project remains one of my favorite musical endeavors.</p>
 					</div>
 
-					<div class="project open-source" data-tag="nes">
+					<div class="project open-source" data-tag="nes emulation">
 						<a id="nestation" class="anchor" href="#nestation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
 						<h3>
 							<a href="https://afska.github.io/nestation" target="_blank">NEStation</a>
 							<img alt="Web" class="button" src="images/icons/web.svg" />
 							<span class="year">(2019)</span>
 							<div class="floatright">
-								<span class="tag">🕹️ nes</span>
+								<span class="tag">🕹️ nes emulation</span>
 								<a href="#nestation" class="nav-button">🔗</a>
 							</div>
 						</h3>
@@ -407,6 +435,9 @@
 						</p>
 
 						<p>A JavaScript library that simplifies connecting two web browsers in a peer-to-peer fashion through <a href="https://webrtc.org/" target="_blank">WebRTC</a> Data Channels.</p>
+						<blockquote class="quote">
+							<p>⚠️ This library has been deprecated in favor of <a href="https://peerjs.com" target="_blank">PeerJS</a>.</p>
+						</blockquote>
 						<p class="right"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/quickp2p" target="_blank">Source code</a></p>
 					</div>
 					
@@ -431,15 +462,15 @@
 						<p class="right"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/el-dumper" target="_blank">Source code</a></p>
 					</div>
 
-					<div class="project" data-tag="video-games">
+					<div class="project" data-tag="video games">
 						<a id="mousewars" class="anchor" href="#mousewars" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
 						<h3>
 							<a href="https://mousewars.io" target="_blank">MouseWars.io</a>
 							<img alt="Web" class="button" src="images/icons/web.svg" />
 							<img alt="Steam" class="button" src="images/icons/steam.svg" />
-							<span class="year">(2017~2018)</span>
+							<span class="year">(2017~2019)</span>
 							<div class="floatright">
-								<span class="tag">🎮 video-games</span>
+								<span class="tag">🎮 video games</span>
 								<a href="#mousewars" class="nav-button">🔗</a>
 							</div>
 						</h3>
@@ -464,14 +495,14 @@
 						</ul>
 					</div>
 
-					<div class="project open-source" data-tag="video-games">
+					<div class="project open-source" data-tag="video games">
 						<a id="halu" class="anchor" href="#halu" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
 						<h3>
 							<a href="https://github.com/afska/halu-engine/releases/download/v1.0.0/Halu.apk" target="_blank">Halu</a>
 							<img alt="Android" class="button" src="images/icons/android.svg" />
 							<span class="year">(2015~2016)</span>
 							<div class="floatright">
-								<span class="tag">🎮 video-games</span>
+								<span class="tag">🎮 video games</span>
 								<a href="#halu" class="nav-button">🔗</a>
 							</div>
 						</h3>
@@ -590,29 +621,6 @@
 						<p>A chat client that my group of friends and I used a lot, inspired by the old MSN Messenger.</p>
 
 						<p>The program supported emoticons, formatting, private conversations, saving chat history, theming, custom servers and moderation.</p>
-
-						<blockquote class="quote">
-							<p>Written in Visual Basic 6, compiled and tested on Windows XP.</p>
-						</blockquote>
-					</div>
-
-					<div class="project" data-tag="archive">
-						<a id="hackthesystem" class="anchor" href="#hackthesystem" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
-						<h3>
-							HackTheSystem
-							<img alt="Windows" class="button" src="images/icons/windows.svg" />
-							<span class="year">(2004~2007)</span>
-							<div class="floatright">
-								<span class="tag">🗑️ archive</span>
-								<a href="#hackthesystem" class="nav-button">🔗</a>
-							</div>
-						</h3>
-
-						<p class="image-preview">
-							<img alt="Screenshot" src="images/screenshots/hackthesystem.png" style="max-height: 222px">
-						</p>
-
-						<p>Fifteen-year-old me wanted to be "a hacker," so I found some online material about building a trojan horse and followed it. That experience made me love network programming and gave me a foundation in TCP sockets, inter-process communication, Win32 API calls, and more. Nobody got hacked in the process. Or maybe a few?</p>
 
 						<blockquote class="quote">
 							<p>Written in Visual Basic 6, compiled and tested on Windows XP.</p>
