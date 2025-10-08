@@ -11,7 +11,14 @@ body {
   background-repeat: repeat;
   background-color: #000;
   overflow-x: hidden;
+  animation: bigscroll 20s linear infinite;
   text-shadow: 0 0 5px #ffffff55;
+}
+
+@keyframes bigscroll {
+  to {
+    background-position: 1024px 1024px;
+  }
 }
 
 /* General & 'Reset' Stuff */
