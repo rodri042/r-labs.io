@@ -470,6 +470,12 @@ a {
   }
 }
 
+@media (max-width: 950px) {
+  .year {
+    display: none;
+  }
+}
+
 @media (max-width: 825px) {
   .index {
     flex-direction: column;
@@ -494,9 +500,5 @@ a {
   .titleproject {
     margin-left: 0;
     margin-right: 0;
-  }
-
-  .year {
-    display: none;
   }
 }
