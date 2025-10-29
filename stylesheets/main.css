@@ -495,4 +495,8 @@ a {
     margin-left: 0;
     margin-right: 0;
   }
+
+  .year {
+    display: none;
+  }
 }
