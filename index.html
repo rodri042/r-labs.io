@@ -68,7 +68,7 @@
 				<div class="index">
 					<span class="menutag tag" data-tag="video games">🎮 video games</span>
 					<span class="menutag tag" data-tag="gba homebrew">👾 gba homebrew</span>
-					<span class="menutag tag" data-tag="nes emulation">🕹️ nes emulation</span>
+					<span class="menutag tag" data-tag="emulators">🕹️ emulators</span>
 					<span class="menutag tag" data-tag="tools">🛠️ tools</span>
 					<span class="menutag tag" data-tag="music">🎶 music</span>
 					<span class="menutag tag" data-tag="origins">🐣 origins</span>
@@ -79,14 +79,14 @@
 				<h2>📁 /<span id="foldername">projects</span></h2>
 
 				<div class="grid">
-					<div class="project open-source" data-tag="nes emulation">
+					<div class="project open-source" data-tag="emulators">
 						<a id="emudevz" class="anchor" href="#emudevz" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
 						<h3>
 							<a href="https://afska.github.io/emudevz" target="_blank">EmuDevz</a>
 							<img alt="Web" class="button" src="images/icons/web.svg" />
 							<span class="year">(2023 ~ now)</span>
 							<div class="floatright">
-								<span class="tag">🕹️ nes emulation</span>
+								<span class="tag">🕹️ emulators</span>
 								<a href="#emudevz" class="nav-button">🔗</a>
 							</div>
 						</h3>
@@ -370,14 +370,53 @@
 						<p class="right"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/halu-engine" target="_blank">Source code</a></p>
 					</div>
 
-					<div class="project open-source" data-tag="nes emulation">
+					<div class="project open-source" data-tag="emulators">
+						<a id="gbcore" class="anchor" href="#gbcore" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+						<h3>
+							<a href="https://afska.github.io/gbcore" target="_blank">NesCore</a>
+							<img alt="Web" class="button" src="images/icons/web.svg" />
+							<span class="year">(2026 ~ now)</span>
+							<div class="floatright">
+								<span class="tag">🕹️ emulators</span>
+								<a href="#gbcore" class="nav-button">🔗</a>
+							</div>
+						</h3>
+
+						<p class="image-preview">
+							<a href="https://afska.github.io/gbcore" target="_blank"><img alt="Screenshot" src="images/screenshots/gbcore.png" style="max-height: 340px"></a>
+						</p>
+
+						<p>A basic GB/GBC emulator made for educational purposes: just to
+							learn about the system! It executes whole instructions and
+							scanlines (not cycle-accurate).</p>
+						<ul>
+							<li>🧠 CPU, 🖥️ PPU, 🔊 APU</li>
+							<li>🌈 GBC features: WRAM/VRAM banks, palettes, tile attributes,
+								priority rules, double-speed mode, VRAM DMA</li>
+							<li>🎮 Input support: keyboard and gamepad</li>
+							<li>⏲️ Timer support</li>
+							<li>🗜️ Mappers: NoMBC, MBC1, MBC2, MBC3, MBC5</li>
+							<li>📷 Save states</li>
+							<li>🐏 Save files</li>
+						</ul>
+						<blockquote class="quote">
+							<p>
+								<strong>Missing features:</strong> Accurate timing, initial
+								state, serial, IR port, STOP instruction, MBC3's RTC, MBC5's
+								rumble, and more ✨
+							</p>
+						</blockquote>
+						<p class="right"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/gbcore" target="_blank">Source code</a></p>
+					</div>
+
+					<div class="project open-source" data-tag="emulators">
 						<a id="nescore" class="anchor" href="#nescore" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
 						<h3>
 							<a href="https://afska.github.io/nescore" target="_blank">NesCore</a>
 							<img alt="Web" class="button" src="images/icons/web.svg" />
 							<span class="year">(2019 ~ now)</span>
 							<div class="floatright">
-								<span class="tag">🕹️ nes emulation</span>
+								<span class="tag">🕹️ emulators</span>
 								<a href="#nescore" class="nav-button">🔗</a>
 							</div>
 						</h3>
@@ -399,14 +438,14 @@
 						<p class="right"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/nescore" target="_blank">Source code</a></p>
 					</div>
 
-					<div class="project open-source" data-tag="nes emulation">
+					<div class="project open-source" data-tag="emulators">
 						<a id="nestation" class="anchor" href="#nestation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
 						<h3>
 							<a href="https://afska.github.io/nestation" target="_blank">NEStation</a>
 							<img alt="Web" class="button" src="images/icons/web.svg" />
 							<span class="year">(2019)</span>
 							<div class="floatright">
-								<span class="tag">🕹️ nes emulation</span>
+								<span class="tag">🕹️ emulators</span>
 								<a href="#nestation" class="nav-button">🔗</a>
 							</div>
 						</h3>
@@ -427,6 +466,27 @@
 							<li>📺 CRT TV emulation</li>
 						</ul>
 						<p class="right"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/nestation" target="_blank">Source code</a></p>
+					</div>
+
+					<div class="project open-source" data-tag="tools">
+						<a id="el-dumper" class="anchor" href="#el-dumper" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+						<h3>
+							<a href="https://github.com/afska/el-dumper" target="_blank">ElDumper</a>
+							<img alt="Arduino" class="button" src="images/icons/arduino.svg" />
+							<span class="year">(2019)</span>
+							<div class="floatright">
+								<span class="tag">🛠️ tools</span>
+								<a href="#el-dumper" class="nav-button">🔗</a>
+							</div>
+						</h3>
+
+						<p class="image-preview">
+							<a href="https://github.com/afska/el-dumper" target="_blank"><img alt="Screenshot" src="images/screenshots/eldumper.png" style="max-height: 340px"></a>
+						</p>
+
+						<p>A Game Boy cartridge dumper that can read the ROM and read/write battery-backed RAM to manage games and save files.</p>
+						<p>It's based on insideGadget's <a href="https://github.com/insidegadgets/GBCartRead" target="_blank">GBCartRead</a>, but it adds a new graphical interface packed as an Electron app, so users don't have to download and execute Python scripts in order to dump the memory.</p>
+						<p class="right"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/el-dumper" target="_blank">Source code</a></p>
 					</div>
 
 					<div class="project" data-tag="music">
@@ -529,27 +589,6 @@
 						<p>I use this to quickly change a song's key when playing an instrument.</p>
 
 						<p class="right"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/play-and-shift" target="_blank">Source code</a></p>
-					</div>
-
-					<div class="project open-source" data-tag="tools">
-						<a id="el-dumper" class="anchor" href="#el-dumper" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
-						<h3>
-							<a href="https://github.com/afska/el-dumper" target="_blank">ElDumper</a>
-							<img alt="Arduino" class="button" src="images/icons/arduino.svg" />
-							<span class="year">(2019)</span>
-							<div class="floatright">
-								<span class="tag">🛠️ tools</span>
-								<a href="#el-dumper" class="nav-button">🔗</a>
-							</div>
-						</h3>
-
-						<p class="image-preview">
-							<a href="https://github.com/afska/el-dumper" target="_blank"><img alt="Screenshot" src="images/screenshots/eldumper.png" style="max-height: 340px"></a>
-						</p>
-
-						<p>A Game Boy cartridge dumper that can read the ROM and read/write battery-backed RAM to manage games and save files.</p>
-						<p>It's based on insideGadget's <a href="https://github.com/insidegadgets/GBCartRead" target="_blank">GBCartRead</a>, but it adds a new graphical interface packed as an Electron app, so users don't have to download and execute Python scripts in order to dump the memory.</p>
-						<p class="right"><img alt="GitHub" class="button" src="images/icons/github.svg" /> <a href="https://github.com/afska/el-dumper" target="_blank">Source code</a></p>
 					</div>
 
 					<div class="project open-source" data-tag="tools">
