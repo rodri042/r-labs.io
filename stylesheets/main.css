@@ -4,8 +4,8 @@ body {
   color: #eaeaea;
   font-size: 16px;
   line-height: 1.5;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal,
-    monospace;
+  font-family:
+    Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   min-width: 520px;
   background-image: url(../images/bkg.png);
   background-repeat: repeat;
@@ -67,10 +67,12 @@ header h1 {
   line-height: 1.5;
   margin: 0 0 0 -40px;
   font-weight: bold;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal,
-    monospace;
+  font-family:
+    Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   color: #b5e853;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(181, 232, 83, 0.1),
+  text-shadow:
+    0 1px 1px rgba(0, 0, 0, 0.1),
+    0 0 5px rgba(181, 232, 83, 0.1),
     0 0 10px rgba(181, 232, 83, 0.1);
   letter-spacing: -1px;
   -webkit-font-smoothing: antialiased;
@@ -111,11 +113,13 @@ h4,
 h5,
 h6 {
   font-weight: normal;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal,
-    monospace;
+  font-family:
+    Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   color: #b5e853;
   letter-spacing: -0.03em;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(181, 232, 83, 0.1),
+  text-shadow:
+    0 1px 1px rgba(0, 0, 0, 0.1),
+    0 0 5px rgba(181, 232, 83, 0.1),
     0 0 10px rgba(181, 232, 83, 0.1);
 }
 
@@ -159,8 +163,8 @@ ul li {
 
 ul li:before {
   content: ">>";
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal,
-    monospace;
+  font-family:
+    Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   font-size: 13px;
   color: #b5e853;
   margin-left: -37px;
@@ -333,6 +337,7 @@ a {
 .index {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin-top: 16px;
@@ -426,7 +431,8 @@ a {
   float: right;
 }
 
-.tag, .clearfilter {
+.tag,
+.clearfilter {
   background-color: #e2e2e250;
   color: white;
   border-radius: 6px;
@@ -436,13 +442,19 @@ a {
   cursor: pointer;
 }
 
-.tag:hover, .clerafilter:hover {
+.tag:hover,
+.clerafilter:hover {
   background-color: #fafafaaa;
 }
 
 .menutag {
   margin-top: 4px;
   margin-bottom: 4px;
+  white-space: nowrap;
+}
+
+.tag-count {
+  font-size: 0.75em;
 }
 
 .clearfilter {

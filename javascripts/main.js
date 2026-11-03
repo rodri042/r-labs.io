@@ -1,6 +1,6 @@
 function highlight() {
 	if (!window.location.hash) return;
-	document.querySelectorAll(".project").forEach((it) => it.style = "");
+	document.querySelectorAll(".project").forEach((it) => (it.style = ""));
 
 	const selectedProject = document.querySelector(window.location.hash);
 	if (selectedProject) {
@@ -17,8 +17,7 @@ highlight();
 
 function scrollToElement(id) {
 	const element = document.getElementById(id);
-	if (element)
-		element.scrollIntoView({ behavior: "smooth" });
+	if (element) element.scrollIntoView({ behavior: "smooth" });
 }
 
 let currentFilter = null;
@@ -29,10 +28,10 @@ function filterBy(tagName) {
 			it.style.display = "block";
 		});
 		document.querySelectorAll(`.index .tag`).forEach((it) => {
-			it.style.display = "block"
+			it.style.display = "block";
 		});
 		document.querySelectorAll(`.clearfilter`).forEach((it) => {
-			it.style.display = "none"
+			it.style.display = "none";
 		});
 		currentFilter = null;
 		scrollToElement("index");
@@ -40,17 +39,19 @@ function filterBy(tagName) {
 		return;
 	}
 
-	document.querySelectorAll(`.project:not([data-tag="${tagName}"])`).forEach((it) => {
-		it.style.display = "none"
-	});
+	document
+		.querySelectorAll(`.project:not([data-tag="${tagName}"])`)
+		.forEach((it) => {
+			it.style.display = "none";
+		});
 	document.querySelectorAll(`[data-tag="${tagName}"]`).forEach((it) => {
-		it.style.display = "block"
+		it.style.display = "block";
 	});
 	document.querySelectorAll(`.index .tag`).forEach((it) => {
-		it.style.display = "none"
+		it.style.display = "none";
 	});
 	document.querySelectorAll(`.clearfilter`).forEach((it) => {
-		it.style.display = "block"
+		it.style.display = "block";
 	});
 
 	currentFilter = tagName;
@@ -65,6 +66,16 @@ function findTag(node) {
 		? node.parentElement.dataset.tag
 		: findTag(node.parentElement);
 }
+
+document.querySelectorAll(".menutag").forEach((node) => {
+	const count = document.querySelectorAll(
+		`.project[data-tag="${node.dataset.tag}"]`,
+	).length;
+	const countLabel = document.createElement("span");
+	countLabel.className = "tag-count";
+	countLabel.textContent = `(${count})`;
+	node.append(" ", countLabel);
+});
 
 document.querySelectorAll(".tag").forEach((node) => {
 	const isProjectButton = findTag(node) != null;
